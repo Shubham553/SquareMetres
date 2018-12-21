@@ -17,7 +17,7 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
+	/*
 
 	1. Vars and Inits
 
@@ -48,7 +48,7 @@ $(document).ready(function()
 	initHomeSlider();
 	initRecentSlider();
 
-	/* 
+	/*
 
 	2. Set Header
 
@@ -66,7 +66,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	3. Init Menu
 
@@ -103,7 +103,7 @@ $(document).ready(function()
 				}
 			});
 
-	
+
 		}
 	}
 
@@ -119,7 +119,7 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
+	/*
 
 	4. Init Home Slider
 
@@ -143,7 +143,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
 
 	5. Init Recent Slider
 
