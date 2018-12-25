@@ -3,5 +3,6 @@ from django import forms
 
 
 class PropertyForm(forms.ModelForm):
-    model = Catalogue
-    exclude = ('profile', 'date')
+    class Meta:
+        model = Catalogue
+        exclude = ('profile', 'catalogue_date')

@@ -1,29 +1,10 @@
-from django.shortcuts import get_object_or_404, render, redirect
-from django.views.generic.edit import ModelFormMixin
+from django.shortcuts import render
 from .forms import *
 from .models import *
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, ListView
+from .choices import price_choices, bedroom_choices, state_choices
+# from itertools import chain
 
-
-# def index(request):
-#     catalogue = Catalogue.objects.order_by('-catalogue_date').filter(is_published=True)
-#     paginator = Paginator(catalogue, 6)
-#     page = request.GET.get('page')
-#     paged_catalogues = paginator.get_page(page)
-#     context = {
-#         'catalogues': paged_catalogues
-#     }
-#     return render(request, 'catalogues/catalogues.html', context)
-#
-#
-# def catalogue(request, catalogue_id):
-#     catalogue = get_object_or_404(Catalogue, pk=catalogue_id)
-#     context = {
-#         'listing': catalogue
-#     }
-#     return render(request, 'catalogues/catalogues.html', context)
-#
-#
 # def search(request):
 #     queryset_catalogue = Catalogue.objects.order_by('-catalogue_date')
 #
@@ -68,7 +49,12 @@ from django.views.generic import CreateView, UpdateView
 
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        'state_choices': state_choices,
+        'bedroom_choices': bedroom_choices,
+        'price_choices': price_choices,
+    }
+    return render(request, 'index.html', context)
 
 
 def about(request):
@@ -89,6 +75,7 @@ def property(request, id):
 
 def properties(request):
     properties_view = Catalogue.objects.all()
+    number_of_properties = properties_view.count()
     # count = 1
     # images = []
     # for i in properties:
@@ -96,11 +83,43 @@ def properties(request):
     # images = i.images.all()
     # count = count + 1
     # print(images[0].image)
-    return render(request, 'properties.html', {'properties': properties_view, })
+    return render(request, 'properties.html', {'properties': properties_view,
+                                               'number_of_properties': number_of_properties})
 
 
 def contactus(request):
     return render(request, 'contact.html')
+
+
+class SearchView(ListView):
+    template_name = 'index.html'
+    paginate_by = 20
+    count = 0
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context['count'] = self.count() or 0
+        context['keywords'] = self.request.GET.get('keywords')
+        context['city'] = self.request.GET.get('city')
+        return context
+
+    def get_queryset(self):
+        request = self.request
+        query = request.GET.get('keywords', None)
+
+        if query is not None:
+            # search_results = Catalogue.objects.search(query)
+
+            # # combine querysets
+            # queryset_chain = chain(
+            #     search_results,
+            # )
+            # qs = sorted(queryset_chain,
+            #             key=lambda instance: instance.pk,
+            #             reverse=True)
+            # self.count = len(qs)  # since qs is actually a list
+            return Catalogue.objects.search(query=query)
+        return Catalogue.objects.none()
 
 
 class AddProperty(CreateView):

@@ -1,0 +1,48 @@
+{% block content %}
+{% load static %}
+{% if object_list is not None %}
+<!--<div class='row title-row my-5'>-->
+    <!--<div class='col-12 py-0'>-->
+        <!--<h3 class='my-0 py-0'>{{ count }} results for <b>{{ query }}</b></h3>-->
+    <!--</div>-->
+<!--</div>-->
+        
+        
+           <div class="properties">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">{{ count }} Properties found</div>
+					<div class="section_subtitle">Search your dream home</div>
+				</div>
+			</div>
+			<div class="row properties_row">
+                {% for property in object_list %}
+				<!-- Property -->
+				<div class="col-xl-4 col-lg-6 property_col">
+					<div class="property">
+						<div class="property_image">
+							<img src="{{ property.photo_main.url }}" alt="" height="353" width="490">
+							<div class="tag_featured property_tag"><a href="#">Featured</a></div>
+						</div>
+						<div class="property_body text-center">
+							<div class="property_location">{{ property.city }}</div>
+							<div class="property_state">{{ property.property_state }}</div>
+							<div class="property_title"><a href="property.html">{{ property.title }}</a></div>
+							<div class="property_price">Rs {{ property.price }}</div>
+						</div>
+						<div class="property_footer d-flex flex-row align-items-center justify-content-start">
+							<div><div class="property_icon"><img src="{% static 'images/icon_1.png' %}" alt=""></div><span>{{ property.area }} Sq.Ft </span></div>
+							<div><div class="property_icon"><img src="{% static 'images/icon_2.png' %}" alt=""></div><span>{{ property.bedrooms }} Bedrooms</span></div>
+							<div><div class="property_icon"><img src="{% static 'images/icon_3.png' %}" alt=""></div><span>{{ property.bathrooms }} Bathrooms</span></div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+			</div>
+
+		</div>
+	</div>
+{% endif %}
+{% endblock content %}

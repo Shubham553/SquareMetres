@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'profiles.apps.ProfilesConfig',
     'catalogue.apps.CatalogueConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [

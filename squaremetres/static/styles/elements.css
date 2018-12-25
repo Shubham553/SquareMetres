@@ -291,7 +291,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #3f6fce;
+	background: #D597E4;
 	z-index: 200;
 	border-bottom: solid 1px transparent;
     border-image: linear-gradient(to right, #487fee, #32fa95);
@@ -842,9 +842,9 @@ section
 }
 .accordion.active
 {
-	background-color: #487fee;
+	background-color: #D597E4;
 	background-image: linear-gradient(to right, #487fee, #32fa95);
-	background: #487fee;
+	background: #D597E4;
 	background: linear-gradient(to right, #487fee, #32fa95);
 	color: #FFFFFF;
 }
@@ -1226,7 +1226,7 @@ section
 .footer_main
 {
 	width: 100%;
-	background: #3f6fce;
+	background: #D597E4;
 	padding-top: 80px;
 	padding-bottom: 72px;
 }

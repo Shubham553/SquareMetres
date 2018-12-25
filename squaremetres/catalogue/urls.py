@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib.auth.decorators import login_required
 from .views import *
 
 
@@ -9,6 +10,6 @@ urlpatterns = [
     path('contact_us/', contactus, name='contact_us'),
     path('property<int:property_id>', property, name='property'),
     path('properties/', properties, name='properties'),
-    path('add_property/', AddProperty.as_view(), name='postproperty'),
-    # path('search', search, name='search'),
+    path('add_property/', login_required(AddProperty.as_view()), name='postproperty'),
+    path('search/', SearchView.as_view(), name='search'),
 ]

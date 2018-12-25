@@ -5,25 +5,30 @@ from django.contrib import messages, auth
 from django.contrib.auth import login, authenticate, logout
 # from django.contrib.auth.decorators import login_required
 from django.views.generic import DetailView, UpdateView, DeleteView
+from catalogue.models import Catalogue
+from .models import UserProfile
 from .forms import *
 
 
 def register(request):
     if request.method == 'POST':
         form = UsersForm(request.POST, request.FILES)
-        email = request.POST['email']
-        print(email)
-        if UserProfile.objects.filter(email=email).exists():
-            messages.error(request, 'email already exists')
-            return redirect('register/')
+        # email = requ est.POST['email']
+        # print(email)
+        # if UserProfile.objects.filter(email=email).exists():
+        #     messages.error(request, 'email already exists')
+        #     return redirect('register/')
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            messages.success(request, 'user registered succesfully')
-            return redirect('/')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user:
+                login(request, user)
+                messages.success(request, 'user registered succesfully')
+            else:
+                messages.error(request, 'unable to authenticate')
+            return redirect('/profiles/userlogin')
     else:
         form = UsersForm()
     return render(request, 'sign_up.html', {'form': form})
@@ -41,7 +46,7 @@ def userlogin(request):
         if user is not None:
             # correct username and password login the user
             login(request, user)
-            messages.success(request, 'user login succesfully')
+            messages.success(request, 'user login successfully')
             return redirect('/')
 
         else:
@@ -56,13 +61,20 @@ def userlogout(request):
     return redirect('/')
 
 
-# def dashboard(request):
-#     user_enquiries = Enquiry.objects.order_by('-enquiry_date').filter(user_id=request.user.id)
-#     context = {
-#         'user_enquiries': user_enquiries
-#     }
-#     return render(request, 'useraccounts/dashboard.html', context)
-
 class Dashboard(DetailView):
     template_name = 'dashboard.html'
-    queryset = UserProfile.objects.all()
+
+    def get_queryset(self):
+        return UserProfile.objects.all()
+
+    def get_context_data(self, **kwargs):
+        pk = self.request.user.pk
+        context = super(Dashboard, self).get_context_data(**kwargs)
+        properties = Catalogue.objects.all()
+        user = UserProfile.objects.get(pk=pk)
+        print(user, properties)
+        context.update({
+            'user': user,
+            'properties': properties
+        })
+        return context

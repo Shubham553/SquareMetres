@@ -1,6 +1,4 @@
 from django import forms
-# from django.contrib.auth.forms import UserCreationForm
-# from django.contrib.auth.models import User
 from .models import *
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
@@ -26,7 +24,10 @@ class UsersForm(forms.ModelForm):
         except ValidationError:
             forms.ValidationError('Invalid Email Address')
         user.set_password(self.cleaned_data['password'])
+        if commit:
+            user.save()
         return user
+
 
 
 
