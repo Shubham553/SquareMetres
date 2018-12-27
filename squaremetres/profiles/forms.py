@@ -29,5 +29,17 @@ class UsersForm(forms.ModelForm):
         return user
 
 
+class UserUpdateForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['username', 'first_name', 'last_name', 'email', 'is_dealer', 'description', 'profile_pic']
+
+        def save(self, commit=True):
+            user = super(UserUpdateForm, self).save(commit=False)
+            if commit:
+                user.save()
+            return user
+
+
 
 

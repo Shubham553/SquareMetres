@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="super_container">
 
 	<!-- Home -->
@@ -20,7 +29,7 @@
 								{% if property.title %}
 								{{ property.title }}
 								{% else %}
-								{{ TownHall with sea view }}
+								{{ 'TownHall with sea view' }}
 								{% endif %}
 							</div>
 							<div class="intro_tags">
@@ -36,9 +45,9 @@
 							<div>For Sale</div>
 							<div class="intro_price">
 								{% if  property.price %}
-								{{  property.price }}
+								Rs {{ property.price }}
 								{% else %}
-									{{ Rs 129500 }}
+									{{ 'Rs 129500' }}
 								{% endif %}
 							</div>
 						</div>
@@ -51,26 +60,26 @@
 			<!-- Intro Slider -->
 			<div class="owl-carousel owl-theme intro_slider">
 				<!-- Slide -->
-				<div class="owl-item"><img src="images/intro_1.jpg" alt=""></div>
+				<div class="owl-item"><img src="{% static 'images/intro_1.jpg' %}" alt=""></div>
 				<!-- Slide -->
-				<div class="owl-item"><img src="images/intro_1.jpg" alt=""></div>
+				<div class="owl-item"><img src="{% static 'images/intro_1.jpg' %}" alt=""></div>
 				<!-- Slide -->
-				<div class="owl-item"><img src="images/intro_1.jpg" alt=""></div>
+				<div class="owl-item"><img src="{% static 'images/intro_1.jpg' %}" alt=""></div>
 			</div>
 
 			<!-- Intro Slider Nav -->
-			<div class="intro_slider_nav_container">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="intro_slider_nav_content d-flex flex-row align-items-start justify-content-end">
-								<div class="intro_slider_nav intro_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-								<div class="intro_slider_nav intro_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<!--<div class="intro_slider_nav_container">-->
+				<!--<div class="container">-->
+					<!--<div class="row">-->
+						<!--<div class="col">-->
+							<!--<div class="intro_slider_nav_content d-flex flex-row align-items-start justify-content-end">-->
+								<!--<div class="intro_slider_nav intro_slider_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>-->
+								<!--<div class="intro_slider_nav intro_slider_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
 		</div>
 	</div>
 
@@ -78,10 +87,8 @@
 
 	<div class="property">
 		<div class="container">
-			<div class="row">
 
 				<!-- Property Content -->
-				<div class="col-lg-7 offset-lg-1">
 					<div class="property_content">
 						<div class="property_icons">
 							<div class="property_title">Extra Facilities</div>
@@ -90,7 +97,7 @@
 									{% if  property.description %}
 									{{  property.description }}
 									{% else %}
-									{{ Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit }}
+									{{ 'Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit' }}
 									{% endif %}
 								</p>
 							</div>
@@ -100,7 +107,7 @@
 								<div class="property_room">
 									<div class="property_room_title">Bedrooms</div>
 									<div class="property_room_content d-flex flex-row align-items-center justify-content-start">
-										<div class="room_icon"><img src="images/room_1.png" alt=""></div>
+										<div class="room_icon"><img src="{% static 'images/room_1.png' %}" alt=""></div>
 										<div class="room_num">
 											{% if  property.bedrooms %}
 											{{  property.bedrooms }}
@@ -115,7 +122,7 @@
 								<div class="property_room">
 									<div class="property_room_title">Bathrooms</div>
 									<div class="property_room_content d-flex flex-row align-items-center justify-content-start">
-										<div class="room_icon"><img src="images/room_2.png" alt=""></div>
+										<div class="room_icon"><img src="{% static 'images/room_2.png' %}" alt=""></div>
 										<div class="room_num">
 											{% if  property.bathrooms %}
 											{{  property.bathrooms }}
@@ -130,12 +137,12 @@
 								<div class="property_room">
 									<div class="property_room_title">Area</div>
 									<div class="property_room_content d-flex flex-row align-items-center justify-content-start">
-										<div class="room_icon"><img src="images/room_3.png" alt=""></div>
+										<div class="room_icon"><img src="{% static 'images/room_3.png' %}" alt=""></div>
 										<div class="room_num">
 											{% if  property.area %}
 											{{  property.area }}
 											{% else %}
-											{{ 1200 Sq.Ft }}
+											{{ '1200 SqFt' }}
 											{% endif %}
 										</div>
 									</div>
@@ -154,7 +161,7 @@
 								<div class="property_room">
 									<div class="property_room_title">Garage</div>
 									<div class="property_room_content d-flex flex-row align-items-center justify-content-start">
-										<div class="room_icon"><img src="images/room_5.png" alt=""></div>
+										<div class="room_icon"><img src="{% static 'images/room_5.png' %}" alt=""></div>
 										<div class="room_num">
 											{% if  property.garage %}
 											{{  property.garage }}
@@ -177,7 +184,7 @@
 									{% if  property.description %}
 											{{  property.description }}
 											{% else %}
-											{{ Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit }}
+											{{ 'Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit' }}
 											{% endif %}
 								</p>
 							</div>
@@ -198,8 +205,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 

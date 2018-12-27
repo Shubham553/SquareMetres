@@ -4,16 +4,17 @@ from django.contrib import messages, auth
 # from enquiries.models import Enquiry
 from django.contrib.auth import login, authenticate, logout
 # from django.contrib.auth.decorators import login_required
-from django.views.generic import DetailView, UpdateView, DeleteView
+from django.views.generic import DetailView, UpdateView
 from catalogue.models import Catalogue
 from .models import UserProfile
+from django.contrib.messages.views import SuccessMessageMixin
 from .forms import *
 
 
 def register(request):
     if request.method == 'POST':
         form = UsersForm(request.POST, request.FILES)
-        # email = requ est.POST['email']
+        # email = request.POST['email']
         # print(email)
         # if UserProfile.objects.filter(email=email).exists():
         #     messages.error(request, 'email already exists')
@@ -46,6 +47,11 @@ def userlogin(request):
         if user is not None:
             # correct username and password login the user
             login(request, user)
+            pk = user.pk
+            if user.is_dealer:
+                return redirect('/profiles/dashboard/' + str(pk))
+            else:
+                return redirect('/')
             messages.success(request, 'user login successfully')
             return redirect('/')
 
@@ -78,3 +84,14 @@ class Dashboard(DetailView):
             'properties': properties
         })
         return context
+
+
+class UserUpdate(UpdateView, SuccessMessageMixin):
+    success_message = 'Update sucessfully'
+    template_name = 'update_user.html'
+    form_class = UserUpdateForm
+    success_url = '/'
+
+    def get_object(self):
+        pk = self.kwargs.get('pk')
+        return get_object_or_404(UserProfile, id=pk)

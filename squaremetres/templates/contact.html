@@ -2,13 +2,11 @@
 {% load static %}
 {% block content %}
 <div class="super_container">
-	<!-- Header -->
-	# {% include 'header.html' %}
 
 	<!-- Home -->
 
 	<div class="home">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/contact.jpg' %}" data-speed="0.8"></div>
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
@@ -17,7 +15,7 @@
 							<div class="home_title">Contact</div>
 							<div class="breadcrumbs ml-auto">
 								<ul>
-									<li><a href="index.htmo">Home</a></li>
+									<li><a href="index.html">Home</a></li>
 									<li>Contact</li>
 								</ul>
 							</div>
@@ -39,20 +37,22 @@
 					<div class="contact_info">
 						<div class="section_title">Get in touch with us</div>
 						<div class="section_subtitle">Say hello</div>
-						<div class="contact_info_text"><p>Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit tempus porttitor.Sed lectus urna, ultricies sit amet risus eget.</p></div>
+						<div class="contact_info_text"><p><b>SquareMetres is India's No 1</b> Property portal
+								The portal provides a platform for property buyers and sellers to locate properties of interest
+								and source information on the real estate space in a transparent and unambiguous manner.</p></div>
 						<div class="contact_info_content">
 							<ul class="contact_info_list">
 								<li>
 									<div>Address:</div>
-									<div>1481 Creekside Lane Avila Beach, CA 93424</div>
+									<div>Logix TechnoPark, Sector 127, Noida</div>
 								</li>
 								<li>
 									<div>Phone:</div>
-									<div>+53 345 7953 32453</div>
+									<div>+91 8775653555</div>
 								</li>
 								<li>
 									<div>Email:</div>
-									<div>yourmail@gmail.com</div>
+									<div>squaremetres@gmail.com</div>
 								</li>
 							</ul>
 						</div>

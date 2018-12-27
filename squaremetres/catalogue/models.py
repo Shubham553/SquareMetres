@@ -30,20 +30,20 @@ class Catalogue(models.Model):
     bathrooms = models.IntegerField(default=0)
     garage = models.IntegerField(default=0)
     area = models.IntegerField()
-    photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                   default='/static/images/defaults/default_property.jpeg')
-    photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
-    photo_2 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
-    photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
-    photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
-    photo_5 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
-    photo_6 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True,
-                                default='/static/images/defaults/default_property.jpeg')
+    photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                   default='/media/defaults/default_property.jpeg')
+    photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
+    photo_2 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
+    photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
+    photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
+    photo_5 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
+    photo_6 = models.ImageField(upload_to='photos/%Y/%m/%d/',
+                                default='/media/defaults/default_property.jpeg')
     is_published = models.BooleanField(default=True)
     catalogue_date = models.DateTimeField(default=date.today, blank=True)
     objects = SearchProperties()

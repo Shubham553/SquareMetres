@@ -8,5 +8,5 @@ class UserProfile(AbstractUser):
     description = models.TextField(blank=True)
     registration_date = models.DateTimeField(default=datetime.now, blank=True)
     profile_pic = models.ImageField(upload_to='user_pic/', null=True, blank=True,
-                                    default='/static/images/defaults/default_pic.png')
+                                    default='/media/defaults/default_pic.png')
 

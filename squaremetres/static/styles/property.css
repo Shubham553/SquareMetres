@@ -12,7 +12,6 @@
 5. Home
 6. Home Search
 7. Properties
-9. Newsletter
 10. Footer
 
 
@@ -311,7 +310,7 @@ section
 }
 .header.scrolled
 {
-	background: rgba(63,111,206,0.85);
+	background: rgba(191, 85, 236, 1);
 }
 .header.scrolled .header_content
 {
@@ -1219,114 +1218,6 @@ section
 	height: calc(100% + 30px);
 }
 
-/*********************************
-9. Newsletter
-*********************************/
-
-.newsletter
-{
-	width: 100%;
-	padding-top: 107px;
-	padding-bottom: 105px;
-}
-.newsletter_title
-{
-	font-size: 30px;
-	font-weight: 600;
-	color: #FFFFFF;
-	line-height: 0.75;
-	white-space: nowrap;
-}
-.newsletter_subtitle
-{
-	font-size: 14px;
-	font-weight: 400;
-	color: #FFFFFF;
-	line-height: 0.75;
-	margin-top: 15px;
-}
-.newsletter_content
-{
-	
-}
-.newsletter_form_container
-{
-	margin-left: 30px;
-	width: 100%;
-}
-.newsletter_form
-{
-	display: block;
-	position: relative;
-	width: 100%;
-}
-.newsletter_input
-{
-	width: 100%;
-	height: 72px;
-	border-radius: 36px;
-	background: #FFFFFF;
-	border: none;
-	outline: none;
-	padding-left: 45px;
-}
-.newsletter_input::-webkit-input-placeholder
-{
-	font-size: 11px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #828282 !important;
-}
-.newsletter_input:-moz-placeholder
-{
-	font-size: 11px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #828282 !important;
-}
-.newsletter_input::-moz-placeholder
-{
-	font-size: 11px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #828282 !important;
-} 
-.newsletter_input:-ms-input-placeholder
-{ 
-	font-size: 11px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #828282 !important;
-}
-.newsletter_input::input-placeholder
-{
-	font-size: 11px !important;
-	font-weight: 400 !important;
-	font-style: italic;
-	color: #828282 !important;
-}
-.newsletter_button
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 193px;
-	height: 72px;
-	color: #FFFFFF;
-	border-radius: 36px;
-	border: none;
-	outline: none;
-	font-size: 14px;
-	font-weight: 700;
-	cursor: pointer;
-	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
-}
-.newsletter_button:active
-{
-	outline: none;
-	border: none;
-}
 
 /*********************************
 10. Footer

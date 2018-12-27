@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cabb468-5929-4c09-8760-26226b710375" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/squaremetres/static/images/defaults/default_property.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/squaremetres/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/squaremetres/templates/view_results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squaremetres/templates/update_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/catalogue/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/catalogue/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/catalogue/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/catalogue/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/catalogue/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/catalogue/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/catalogue/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/catalogue/views.py" afterDir="false" />
@@ -14,25 +11,26 @@
       <change beforePath="$PROJECT_DIR$/squaremetres/profiles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/profiles/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/profiles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/profiles/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/profiles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/profiles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/squaremetres/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/squaremetres/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/default_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/images/defaults/default_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/images/property_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/styles/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/about_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/contact_responsive.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/styles/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/news.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/news_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/properties.css" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/styles/properties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/property.css" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/styles/property.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/static/styles/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/static/styles/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/squaremetres/templates/properties.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/properties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/squaremetres/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/templates/property.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/property.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squaremetres/templates/view_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/squaremetres/templates/view_results.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="102" column="39" lean-forward="true" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+            <state relative-caret-position="2640">
+              <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -54,29 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/squaremetres/templates/properties.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/squaremetres/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="212">
+              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -85,31 +65,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/urls.py">
+        <entry file="file://$PROJECT_DIR$/squaremetres/templates/properties.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/squaremetres/templates/search.html">
+        <entry file="file://$PROJECT_DIR$/squaremetres/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/squaremetres/templates/view_results.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="880">
+              <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,36 +97,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>footer_main</find>
+      <find>footer</find>
+      <find>header</find>
+      <find>ac</find>
+      <find>newsletter</find>
+      <find>data-image-src</find>
+      <find>static</find>
+      <find>news</find>
+      <find>data-</find>
+      <find>data-im</find>
+      <find>phone_num</find>
+      <find>{% static '</find>
+      <find>#D597E4</find>
+      <find>background:</find>
+      <find>accord</find>
+      <find>class</find>
+      <find>scrolled</find>
+      <find>scroll</find>
+      <find>about_us</find>
+      <find>get_context</find>
+      <find>Dash</find>
+      <find>image</find>
+      <find>chev</find>
+      <find>user_details</find>
+      <find>postp</find>
       <find>listing</find>
       <find>list</find>
-      <find>from django.</find>
-      <find>object.</find>
-      <find>{% if</find>
-      <find>messages</find>
-      <find>add_pro</find>
-      <find>search</find>
-      <find>map</find>
-      <find>class=&quot;con</find>
-      <find>color</find>
-      <find>save</find>
-      <find>class=&quot;super</find>
-      <find>static '</find>
-      <find>&lt;tr&gt;</find>
-      <find>phone.p</find>
-      <find>phone</find>
-      <find>rgba</find>
-      <find>.footer</find>
-      <find>\.header</find>
-      <find>main_sty</find>
-      <find>back</find>
-      <find>footer_main</find>
-      <find>about.c</find>
-      <find>&lt;script</find>
-      <find>add</find>
-      <find>header</find>
-      <find>footer</find>
-      <find>as_v</find>
-      <find>vill</find>
+      <find>, blank=True</find>
+      <find>properties</find>
+      <find>found</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;{%</replace>
@@ -187,7 +158,12 @@
       <replace>.css' %}</replace>
       <replace>Dealer</replace>
       <replace>UserProfile</replace>
+      <replace>user</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/squaremetres/static/styles</dir>
+      <dir>$PROJECT_DIR$/squaremetres</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -195,10 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/templates/news.html" />
-        <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/templates/index.html" />
-        <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/templates/contact.html" />
-        <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/templates/properties.html" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/templates/header.html" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/static/styles/main_styles.css" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/static/styles/about.css" />
@@ -216,35 +188,39 @@
         <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/models.py" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetresapp/urls.py" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetres/urls.py" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/about.html" />
         <option value="$PROJECT_DIR$/squaremetres/templates/elements.html" />
         <option value="$PROJECT_DIR$/squaremetres/templates/seach.html" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/contact.html" />
         <option value="$PROJECT_DIR$/squaremetres/profiles/admin.py" />
         <option value="$PROJECT_DIR$/squaremetres/catalogue/admin.py" />
         <option value="$PROJECT_DIR$/squaremetres/templates/sign_up.html" />
         <option value="$PROJECT_DIR$/squaremetres/templates/login.html" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/property.html" />
         <option value="$PROJECT_DIR$/squaremetres/templates/property_form.html" />
         <option value="$PROJECT_DIR$/squaremetres/squaremetres/settings.py" />
         <option value="$PROJECT_DIR$/squaremetres/catalogue/forms.py" />
         <option value="$PROJECT_DIR$/squaremetres/templates/messages.html" />
+        <option value="$PROJECT_DIR$/squaremetres/static/styles/elements.css" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/search.html" />
+        <option value="$PROJECT_DIR$/squaremetres/profiles/models.py" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/header.html" />
+        <option value="$PROJECT_DIR$/squaremetres/static/styles/properties.css" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/footer.html" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/about.html" />
+        <option value="$PROJECT_DIR$/squaremetres/static/styles/responsive.css" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/contact.html" />
+        <option value="$PROJECT_DIR$/squaremetres/static/styles/property.css" />
+        <option value="$PROJECT_DIR$/squaremetres/static/styles/main_styles.css" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/base.html" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/property.html" />
         <option value="$PROJECT_DIR$/squaremetres/profiles/forms.py" />
         <option value="$PROJECT_DIR$/squaremetres/profiles/urls.py" />
         <option value="$PROJECT_DIR$/squaremetres/profiles/views.py" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/squaremetres/profiles/models.py" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/header.html" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/footer.html" />
-        <option value="$PROJECT_DIR$/squaremetres/static/styles/main_styles.css" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/base.html" />
-        <option value="$PROJECT_DIR$/squaremetres/static/styles/elements.css" />
         <option value="$PROJECT_DIR$/squaremetres/catalogue/urls.py" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/search.html" />
-        <option value="$PROJECT_DIR$/squaremetres/templates/index.html" />
-        <option value="$PROJECT_DIR$/squaremetres/catalogue/views.py" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/update_user.html" />
         <option value="$PROJECT_DIR$/squaremetres/catalogue/models.py" />
         <option value="$PROJECT_DIR$/squaremetres/templates/properties.html" />
+        <option value="$PROJECT_DIR$/squaremetres/templates/index.html" />
+        <option value="$PROJECT_DIR$/squaremetres/catalogue/views.py" />
         <option value="$PROJECT_DIR$/squaremetres/templates/view_results.html" />
       </list>
     </option>
@@ -260,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,7 +258,26 @@
               <item name="SquareMetres" type="b2602c69:ProjectViewProjectNode" />
               <item name="SquareMetres" type="462c0819:PsiDirectoryNode" />
               <item name="squaremetres" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SquareMetres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SquareMetres" type="462c0819:PsiDirectoryNode" />
+              <item name="squaremetres" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="defaults" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SquareMetres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SquareMetres" type="462c0819:PsiDirectoryNode" />
+              <item name="squaremetres" type="462c0819:PsiDirectoryNode" />
               <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SquareMetres" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SquareMetres" type="462c0819:PsiDirectoryNode" />
+              <item name="squaremetres" type="462c0819:PsiDirectoryNode" />
+              <item name="squaremetres" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SquareMetres" type="b2602c69:ProjectViewProjectNode" />
@@ -295,22 +289,26 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$USER_HOME$/exercise/bluesky/properties.html" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/R_estate" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/squaremetres/templates" />
+      <recent name="$PROJECT_DIR$/squaremetres/static/images" />
+      <recent name="$PROJECT_DIR$/squaremetres/squaremetresapp/static/images" />
+      <recent name="$PROJECT_DIR$/squaremetres/squaremetresapp/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/squaremetres/media" />
       <recent name="$PROJECT_DIR$/squaremetres/static/images/defaults" />
       <recent name="$PROJECT_DIR$/squaremetres" />
       <recent name="$PROJECT_DIR$/squaremetres/squaremetresapp/static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/squaremetres/squaremetresapp/static/images" />
-      <recent name="$PROJECT_DIR$/squaremetres/squaremetresapp/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,7 +348,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16979656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -361,167 +359,19 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.46612903" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.37741935" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.46612903" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32903227" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="default image" />
     <option name="LAST_COMMIT_MESSAGE" value="default image" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/squaremetres/catalogue/models.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/squaremetres/catalogue/models.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/squaremetres/catalogue/models.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/squaremetres/catalogue/views.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/squaremetres/catalogue/views.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="352" column="29" lean-forward="true" selection-start-line="352" selection-start-column="29" selection-end-line="352" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/views/generic/edit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/core/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="413" column="21" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#small#0;n#p#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/property.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/property_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/bootstrap4/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -536,24 +386,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/templates/messages.html" />
-    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/static/images/icon_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -569,19 +402,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/media/user/log.jpeg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/static/images/phone.png">
       <provider selected="true" editor-type-id="images" />
@@ -611,48 +431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/squaremetres/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#646#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/squaremetres/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6125">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/static/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -663,38 +445,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/elements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1228" column="23" selection-start-line="1228" selection-start-column="23" selection-end-line="1228" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/main_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="293" column="23" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -705,10 +459,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/urls.py">
+    <entry file="file://$PROJECT_DIR$/squaremetres/media/user/log.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/properties_responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="73" column="11" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/properties.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="291" column="23" selection-start-line="291" selection-start-column="23" selection-end-line="291" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/news.css" />
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="120" selection-start-line="15" selection-start-column="59" selection-end-line="17" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="129" selection-start-line="8" selection-start-column="129" selection-end-line="8" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/elements.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="935" column="1" lean-forward="true" selection-start-line="935" selection-start-column="1" selection-end-line="935" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1420">
+          <caret line="287" column="5" lean-forward="true" selection-start-line="287" selection-start-column="5" selection-end-line="287" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="60" column="24" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/elements_responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/main_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="314" column="37" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/static/styles/property.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="312" column="19" lean-forward="true" selection-start-line="312" selection-start-column="19" selection-end-line="312" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/squaremetres/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#646#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/property.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="204" column="34" lean-forward="true" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/update_user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/property_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="148" column="45" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="45" />
+          <folding>
+            <element signature="n#section#1;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#5;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/media/defaults/default_property.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -717,52 +642,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="280">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="83" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/models.py">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/models.py">
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/view_results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="400">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/templates/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="600">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/profiles/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="102" column="39" lean-forward="true" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+        <state relative-caret-position="2640">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -771,15 +693,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/squaremetres/templates/properties.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="80">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squaremetres/templates/view_results.html">
+    <entry file="file://$PROJECT_DIR$/squaremetres/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="880">
+          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squaremetres/catalogue/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

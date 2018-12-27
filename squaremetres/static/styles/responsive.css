@@ -172,21 +172,6 @@
 	{
 		margin-bottom: 60px;
 	}
-	.newsletter_form_container
-	{
-		margin-left: 0;
-		margin-top: 50px;
-	}
-	.newsletter_button
-	{
-		width: 173px;
-		height: 52px;
-		font-size: 12px;
-	}
-	.newsletter_input
-	{
-		height: 52px;
-	}
 	.footer_col:not(:last-child)
 	{
 		margin-bottom: 0px;
@@ -300,10 +285,6 @@
 	.city_subtitle
 	{
 		font-size: 14px;
-	}
-	.newsletter_title
-	{
-		font-size: 24px;
 	}
 	.footer_phone,
 	.cr

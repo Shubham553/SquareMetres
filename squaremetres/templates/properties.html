@@ -13,12 +13,7 @@
 
 	<div class="properties">
 		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title">{{ number_of_properties }} Properties found</div>
-					<div class="section_subtitle">Search your dream home</div>
-				</div>
-			</div>
+			{% if properties %}
 			<div class="row properties_row">
 				{% for property in properties %}
 				<!-- Property -->
@@ -44,18 +39,48 @@
 				{% endfor %}
 
 			</div>
-			<div class="row">
-				<div class="col">
-					<div class="pagination">
-						<ul>
-							<li class="active"><a href="#">01.</a></li>
-							<li><a href="#">02.</a></li>
-							<li><a href="#">03.</a></li>
-							<li><a href="#">04.</a></li>
-						</ul>
-					</div>
+			{% else %}
+			<div class="section-title text-center">
+					<h3>No Properties Found</h3>
 				</div>
-			</div>
+			{% endif%}
+			<div class="row">
+                <div class="col-md-12">
+                    {% if pages.has_other_pages %}
+                        <ul class="pagination">
+                            {% if pages.has_previous %}
+                                <li class="page-item">
+                                    <a href="?page={{ pages.previous_page_number }}" class="page-link">&laquo;</a>
+                                </li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a class="page-link">&laquo;</a>
+                                </li>
+                            {% endif %}
+                            {% for pageIndex in pages.paginator.page_range %}
+                                {% if pages.number == pageIndex %}
+                                    <li class="page-item active">
+                                        <a class="page_link">{{ pageIndex }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="class-item">
+                                        <a href="?page={{ pageIndex }}" class="page-link">{{ pageIndex }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if pages.has_next %}
+                                <li class="page-item">
+                                    <a href="?page={{ pages.next_page_number }}" class="page-link">&raquo;</a>
+                                </li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a class="page-link">&raquo;</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                </div>
+        </div>
 		</div>
 	</div>
 

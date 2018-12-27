@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from .forms import *
 from .models import *
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, TemplateView
 from .choices import price_choices, bedroom_choices, state_choices
+from django.core.paginator import Paginator
+
 # from itertools import chain
 
 # def search(request):
@@ -48,17 +50,32 @@ from .choices import price_choices, bedroom_choices, state_choices
 #     return render(request, 'catalogues/search.html', context)
 
 
-def index(request):
-    context = {
-        'state_choices': state_choices,
-        'bedroom_choices': bedroom_choices,
-        'price_choices': price_choices,
-    }
-    return render(request, 'index.html', context)
+# def index(request):
+#     context = {
+#         'state_choices': state_choices,
+#         'bedroom_choices': bedroom_choices,
+#         'price_choices': price_choices,
+#     }
+#     return render(request, 'index.html', context)
 
 
-def about(request):
-    return render(request, 'about.html')
+class HomeView(TemplateView):
+    template_name = 'index.html'
+
+    def get_context_data(self, **kwargs):
+        properties_view = Catalogue.objects.order_by('-catalogue_date')
+        context = super(HomeView, self).get_context_data(**kwargs)
+        context.update({
+            'state_choices': state_choices,
+            'bedroom_choices': bedroom_choices,
+            'price_choices': price_choices,
+            'properties': properties_view,
+        })
+        return context
+
+
+# def about(request):
+#     return render(request, 'about.html')
 
 
 def property(request, id):
@@ -73,9 +90,26 @@ def property(request, id):
     return render(request, 'property.html', context)
 
 
+# class PropertyView(TemplateView):
+#     template_name = 'property.html'
+#
+#     def get_context_data(self, **kwargs):
+#         pk = self.request.user.pk
+#         context = super(HomeView, self).get_context_data(**kwargs)
+#         property = Catalogue.objects.get(pk=pk)
+#         context.update({
+#             'property': property,
+#         })
+#         return context
+
+
 def properties(request):
-    properties_view = Catalogue.objects.all()
-    number_of_properties = properties_view.count()
+    # properties_view = Catalogue.objects.all()
+    properties_view = Catalogue.objects.order_by('-catalogue_date')
+    number_of_properties = properties_view.count
+    paginator = Paginator(properties_view, 6)
+    page = request.GET.get('page')
+    pages = paginator.get_page(page)
     # count = 1
     # images = []
     # for i in properties:
@@ -84,11 +118,12 @@ def properties(request):
     # count = count + 1
     # print(images[0].image)
     return render(request, 'properties.html', {'properties': properties_view,
-                                               'number_of_properties': number_of_properties})
+                                               'number_of_properties': number_of_properties,
+                                               'pages': pages})
 
 
-def contactus(request):
-    return render(request, 'contact.html')
+# def contactus(request):
+#     return render(request, 'contact.html')
 
 
 class SearchView(ListView):
@@ -98,7 +133,7 @@ class SearchView(ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context['count'] = self.count() or 0
+        context['count'] = self.count or 0
         context['keywords'] = self.request.GET.get('keywords')
         context['city'] = self.request.GET.get('city')
         return context
