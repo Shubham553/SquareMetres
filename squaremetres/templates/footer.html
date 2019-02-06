@@ -1,4 +1,4 @@
-{% load static %}	
+{% load static %}
 <footer class="footer">
 		<div class="footer_main">
 			<div class="container">
@@ -18,36 +18,51 @@
 								and source information on the real estate space in a transparent and unambiguous manner.</div>
 						</div>
 					</div>
+					{% if properties %}
+					{% for property in properties %}
 					<div class="col-lg-3 footer_col">
 						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
 							<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_1.jpg' %}" alt=""></div></div>
 							<div class="footer_latest_content">
-								<div class="footer_latest_location">Miami</div>
-								<div class="footer_latest_name"><a href="#">Sea view property</a></div>
-								<div class="footer_latest_price">Rs 1. 234 981</div>
+								<div class="footer_latest_location">{{ property.city }}</div>
+								<div class="footer_latest_name"><a href="#">{{ property.title }}</a></div>
+								<div class="footer_latest_price">Rs {{ property.price }}</div>
 							</div>
 						</div>
 					</div>
+					{% endfor %}
+					{% else %}
 					<div class="col-lg-3 footer_col">
 						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
-							<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_2.jpg' %}" alt=""></div></div>
-							<div class="footer_latest_content">
-								<div class="footer_latest_location">Miami</div>
-								<div class="footer_latest_name"><a href="#">Town House</a></div>
-								<div class="footer_latest_price">Rs 1. 234 981</div>
-							</div>
+							<div><div class="footer_latest_image"><img src="" alt="No Property Found"></div></div>
+							<!--<div class="footer_latest_content">-->
+								<!--<div class="footer_latest_location">Miami</div>-->
+								<!--<div class="footer_latest_name"><a href="#">Town House</a></div>-->
+								<!--<div class="footer_latest_price">Rs 1. 234 981</div>-->
+							<!--</div>-->
 						</div>
 					</div>
-					<div class="col-lg-3 footer_col">
-						<div class="footer_latest d-flex flex-row align-items-start justify-content-start">
-							<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_3.jpg' %}" alt=""></div></div>
-							<div class="footer_latest_content">
-								<div class="footer_latest_location">Miami</div>
-								<div class="footer_latest_name"><a href="#">Modern House</a></div>
-								<div class="footer_latest_price">Rs 1. 234 981</div>
-							</div>
-						</div>
-					</div>
+					{% endif %}
+					<!--<div class="col-lg-3 footer_col">-->
+						<!--<div class="footer_latest d-flex flex-row align-items-start justify-content-start">-->
+							<!--<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_2.jpg' %}" alt=""></div></div>-->
+							<!--<div class="footer_latest_content">-->
+								<!--<div class="footer_latest_location">Miami</div>-->
+								<!--<div class="footer_latest_name"><a href="#">Town House</a></div>-->
+								<!--<div class="footer_latest_price">Rs 1. 234 981</div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="col-lg-3 footer_col">-->
+						<!--<div class="footer_latest d-flex flex-row align-items-start justify-content-start">-->
+							<!--<div><div class="footer_latest_image"><img src="{% static 'images/footer_latest_3.jpg' %}" alt=""></div></div>-->
+							<!--<div class="footer_latest_content">-->
+								<!--<div class="footer_latest_location">Miami</div>-->
+								<!--<div class="footer_latest_name"><a href="#">Modern House</a></div>-->
+								<!--<div class="footer_latest_price">Rs 1. 234 981</div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
 				</div>
 			</div>
 		</div>

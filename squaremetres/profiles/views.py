@@ -1,12 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages, auth
 # from django.contrib.auth.models import User
-# from enquiries.models import Enquiry
+from enquiries.models import Enquiry
 from django.contrib.auth import login, authenticate, logout
 # from django.contrib.auth.decorators import login_required
 from django.views.generic import DetailView, UpdateView
 from catalogue.models import Catalogue
-from .models import UserProfile
 from django.contrib.messages.views import SuccessMessageMixin
 from .forms import *
 
@@ -74,14 +73,17 @@ class Dashboard(DetailView):
         return UserProfile.objects.all()
 
     def get_context_data(self, **kwargs):
-        pk = self.request.user.pk
         context = super(Dashboard, self).get_context_data(**kwargs)
-        properties = Catalogue.objects.all()
-        user = UserProfile.objects.get(pk=pk)
-        print(user, properties)
+        # properties = Catalogue.objects.all(pk=self.request.user.pk)
+        user_data = UserProfile.objects.get(pk=self.kwargs['pk'])
+        print(user_data)
+        # properties = user_data.profile.all()
+        property = Enquiry.objects.order_by('-enquiry_date').filter(buyer_id=self.request.user.id)
+        # print(user, properties, property)
         context.update({
-            'user': user,
-            'properties': properties
+            'user': user_data,
+            # 'properties': properties,
+            'property': property
         })
         return context
 

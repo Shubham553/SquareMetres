@@ -26,7 +26,7 @@
 						<div class="property_body text-center">
 							<div class="property_location">{{ property.city }}</div>
 							<div class="property_state">{{ property.property_state }}</div>
-							<div class="property_title"><a href="property.html">{{ property.title }}</a></div>
+							<div class="property_title"><a href="{% url 'property' property.id %}">{{ property.title }}</a></div>
 							<div class="property_price">Rs {{ property.price }}</div>
 						</div>
 						<div class="property_footer d-flex flex-row align-items-center justify-content-start">

@@ -14,9 +14,6 @@
 
 	<!-- Home -->
 
-	{% include 'search.html' %}
-
-
 	<!-- Intro -->
 
 	<div class="intro">
@@ -32,14 +29,7 @@
 								{{ 'TownHall with sea view' }}
 								{% endif %}
 							</div>
-							<div class="intro_tags">
-								<ul>
-									<li><a href="#">Hottub</a></li>
-									<li><a href="#">Swimming Pool</a></li>
-									<li><a href="#">Garden</a></li>
-									<li><a href="#">Hard Wood Floor</a></li>
-								</ul>
-							</div>
+
 						</div>
 						<div class="intro_price_container ml-lg-auto d-flex flex-column align-items-start justify-content-center">
 							<div>For Sale</div>
@@ -97,7 +87,7 @@
 									{% if  property.description %}
 									{{  property.description }}
 									{% else %}
-									{{ 'Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit' }}
+									{{ 'No Description' }}
 									{% endif %}
 								</p>
 							</div>
@@ -184,26 +174,26 @@
 									{% if  property.description %}
 											{{  property.description }}
 											{% else %}
-											{{ 'Donec ullamcorper nulla non metus auctor fringi lla. Curabitur blandit' }}
+											{{ 'No Description' }}
 											{% endif %}
 								</p>
 							</div>
 						</div>
 						<!-- Property On Map -->
 
-						<div class="property_map">
-							<div class="property_title">Property on map</div>
-							<div class="property_map_container">
+						<!--<div class="property_map">-->
+							<!--<div class="property_title">Property on map</div>-->
+							<!--<div class="property_map_container">-->
 
-								<!-- Google Map -->
-								<div id="google_map" class="google_map">
-									<div class="map_container">
-										<div id="map"></div>
-									</div>
-								</div>
+								<!--&lt;!&ndash; Google Map &ndash;&gt;-->
+								<!--<div id="google_map" class="google_map">-->
+									<!--<div class="map_container">-->
+										<!--<div id="map"></div>-->
+									<!--</div>-->
+								<!--</div>-->
 
-							</div>
-						</div>
+							<!--</div>-->
+						<!--</div>-->
 					</div>
 		</div>
 	</div>

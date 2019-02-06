@@ -109,7 +109,7 @@
                                     <div class="property_body text-center">
                                         <div class="property_location">{{ property.city }}</div>
                                         <div class="property_state">{{ property.state }}</div>
-                                        <div class="property_title"><a href="property.html">{{ property.title }}</a>
+                                        <div class="property_title"><a href="{% url 'property' property.id %}">{{ property.title }}</a>
                                         </div>
                                         <div class="property_price">Rs {{ property.price }}</div>
                                     </div>
@@ -139,6 +139,8 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
 </section>
 {% else %}
 <section id="dashboard" class="py-4">
@@ -146,7 +148,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <br><br>
-                <p>Here are the property listings that you have inquired about</p>
+                <p>Here are the property listings that you have enquired about</p>
                 <table class="table">
                     <thead>
                     <tr>
@@ -156,27 +158,14 @@
                     </tr>
                     </thead>
                     <tbody>
+                    {% for values in property %}
                     <tr>
-                        <td>22</td>
-                        <td>45 Drivewood Circle</td>
+                        <td>{{values.enquiry_date}}</td>
                         <td>
-                            <a class="btn btn-dark pull-right" href="#">View Listing</a>
+                            <a class="btn btn-dark pull-right" href="{% url 'property' values.property_id %}">{{values.property_name}}">View Property</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>43</td>
-                        <td>22 Westbrook rd</td>
-                        <td>
-                            <a class="btn btn-dark pull-right" href="#">View Listing</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>31</td>
-                        <td>12 Samson Ave</td>
-                        <td>
-                            <a class="btn btn-dark pull-right" href="#">View Listing</a>
-                        </td>
-                    </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>

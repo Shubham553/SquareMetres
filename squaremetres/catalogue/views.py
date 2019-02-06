@@ -4,6 +4,7 @@ from .models import *
 from django.views.generic import CreateView, ListView, TemplateView
 from .choices import price_choices, bedroom_choices, state_choices
 from django.core.paginator import Paginator
+from django.http import HttpResponse
 
 # from itertools import chain
 
@@ -65,12 +66,16 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         properties_view = Catalogue.objects.order_by('-catalogue_date')
         context = super(HomeView, self).get_context_data(**kwargs)
+        number_of_properties = 0
+
         context.update({
             'state_choices': state_choices,
             'bedroom_choices': bedroom_choices,
             'price_choices': price_choices,
             'properties': properties_view,
+            'number_of_properties': number_of_properties
         })
+        print(context)
         return context
 
 
@@ -164,8 +169,10 @@ class AddProperty(CreateView):
     success_url = '/'
 
     def form_valid(self, form):
-        self.object = form.save(commit=False)
-        self.object.profile = self.request.user
-        self.object.save()
-        return super(AddProperty, self).form_valid(form)
+        instance = form.save(commit=False)
+        # self.object.profile = self.request.user
+        instance.save()
+        form.save_m2m()
+        instance.profile.add(self.request.user)
 
+        return HttpResponse("<html>ok</html>")
