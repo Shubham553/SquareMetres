@@ -29,5 +29,5 @@ Steps:
 5. Tada. All done. Run Django Server:  
   `python manage.py runserver`
 
-Check your running portal at: 127.0.0.1
-If above not working try: 127.0.0.1:8000 or localhost:8000
+Check your running portal at: **127.0.0.1**  
+If above not working try: **127.0.0.1:8000** or **localhost:8000**
