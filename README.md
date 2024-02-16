@@ -1,9 +1,9 @@
 # A basic **Real Estate website** 
 
 It contains 3 main modules:
-1. Profile (Dealer/Buyer)
-2. Catalogue
-3. Enquiries
+1. **Profile** (Dealer/Buyer)
+2. **Catalogue**
+3. **Enquiries**
 
 **Profile** module is for User related operations.
 
@@ -20,13 +20,13 @@ It contains 3 main modules:
 2. A virtual env is need, check: https://docs.python.org/3/library/venv.html
 
 Steps:
-1. Create Virtual Env, activate it: `source <env_name>/bin/activate` --> for Linux or `<env_name>/Scripts/activate.bat` --> for Windows
-2. Install requirements using requirements.txt by going to squaremetres subfolder. 
+1. Create a Virtual Env, activate it: `source <env_name>/bin/activate` --> for Linux or `<env_name>/Scripts/activate.bat` --> for Windows
+2. Install requirements using requirements.txt by going to squaremetres subfolder.  
   `pip install -r requirements.txt`
 3. Create a sqlite database with no tables. Awkward right? Use any database as per your need, this is a basic application.
-4. run migrate command to create tables in database
-  `Python manage.py migrate`
-5. Tada. All done. Run Django Server:
+4. run migrate command to create tables in database  
+  `python manage.py migrate`
+5. Tada. All done. Run Django Server:  
   `python manage.py runserver`
 
 Check your running portal at: 127.0.0.1
